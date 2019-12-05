@@ -50,10 +50,7 @@ object Main extends App {
   val dolarInfoCSVReader = DolarInfoCSVReader("data/test.csv")
   val rows: List[DolarInfo] = readDolarInfo(dolarInfoCSVReader)
 
-  println(rows.head.id)
-  println(s"Cierre: ${rows.head.cierre} - Predict Cierre: ${predictCierre(rows.head)}")
-
-  //  rows.map(row => {
-//    println(s"Cierre: ${row.cierre} - Predict Cierre: ${predictCierre(row)}")
-//  })
+  rows.map(row => {
+    println(s"Cierre: ${row.cierre} - Predict Cierre: ${predictCierre(row)}")
+  })
 }

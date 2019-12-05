@@ -13,7 +13,7 @@ object DolarInfoCSVReader {
     val dolarInfo = line.split(",").map(_.trim)
 
     val id: Int = dolarInfo(0).toInt
-    println(s"to dolar info $id...")
+    //println(s"to dolar info $id...")
     //val formatter: DateTimeFormatter = DateTimeFormatter.ofPattern("dd/MM/yyyy hh:mm:ss a")
     //val fecha: LocalDateTime = LocalDateTime.parse(dolarInfo(1), formatter)
     val fecha: String = dolarInfo(1)
